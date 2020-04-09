@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Ui Practice</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel = "stylesheet" type = "text/css" href = "jquery-ui-practice.css">
+    <script type = "text/javascript"  src = "jquery-ui-practice.js" async></script>
+
+</head>
+<body>
+    <div id = "container">
+        <center><h1>Jquery UI Practice</h1></center>
+        <div>
+            <h1>Draggable</h1>
+            <div id = "draggable-xy" class = "box-example" >
+                This can be dragged anywhere.
+            </div>
+            <div id = "draggable-x" class = "box-example" >
+                This can be dragged only horizontally.
+            </div>
+            <div id = "draggable-y" class = "box-example">
+                This can be dragged only vertically.
+            </div>
+            <div id = "draggable-contained" class = "box-example">
+                This can be dragged only inside the parent div.
+            </div>
+        </div> 
+        <div>
+            <h1>Resizable</h1>
+            <div id = "resizable" class = "box-example">
+                This can be resized without a limit.
+            </div>
+            <div id = "resizable-grid" class = "box-example">
+                This can be resized in increments.
+            </div>
+            <div id = "resizable-alert" class = "box-example">
+                This will alert when it has been resized to more than 300px.
+            </div>
+            <div id = "resizable-1" class = "box-example">
+                This will also resize the one on the right.
+            </div>
+            <div id = "resizable-2" class = "box-example">
+                This can be resized by the one on the left.
+            </div>
+        </div>
+        <div>
+            <h1>Droppable</h1>
+            <center>
+                <div id = "droppable" class = "box-example">
+                    This can be dropped into the box to the right.
+                </div>
+                <div id = "droppable-container">
+                    <p id = "drop-here">Drop Here</p>
+                </div>
+            </center>
+        </div>
+        <div>
+            <h1>List</h1>
+            <div id = "accordion">
+                <h3>Lorem Ipsum 1</h3>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dui libero, rhoncus a ultrices sit amet, 
+                porta vel dolor. Mauris luctus lacinia velit, sed pharetra est. Nam convallis ac augue quis mollis. 
+                Vivamus ut interdum libero. Fusce mattis odio vitae urna interdum, a congue turpis sagittis. Integer ultricies 
+                sagittis risus eu accumsan. In dapibus augue quis lacinia auctor. Ut quis justo a lacus sagittis vehicula. 
+                Ut et mi non mauris dictum scelerisque. Integer scelerisque sapien urna, id consectetur nulla ultrices at. 
+                Mauris vestibulum, ligula fermentum ornare pharetra, urna diam elementum libero, tincidunt posuere libero 
+                lorem quis nibh. Nam at scelerisque orci.
+                </p>
+                <h3>Lorem Ipsum 2</h3>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dui libero, rhoncus a ultrices sit amet, 
+                porta vel dolor. Mauris luctus lacinia velit, sed pharetra est. Nam convallis ac augue quis mollis. 
+                Vivamus ut interdum libero. Fusce mattis odio vitae urna interdum, a congue turpis sagittis. Integer ultricies 
+                sagittis risus eu accumsan. In dapibus augue quis lacinia auctor. Ut quis justo a lacus sagittis vehicula. 
+                Ut et mi non mauris dictum scelerisque. Integer scelerisque sapien urna, id consectetur nulla ultrices at. 
+                Mauris vestibulum, ligula fermentum ornare pharetra, urna diam elementum libero, tincidunt posuere libero 
+                lorem quis nibh. Nam at scelerisque orci.
+                </p>
+                <h3>Lorem Ipsum 3</h3>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dui libero, rhoncus a ultrices sit amet, 
+                porta vel dolor. Mauris luctus lacinia velit, sed pharetra est. Nam convallis ac augue quis mollis. 
+                Vivamus ut interdum libero. Fusce mattis odio vitae urna interdum, a congue turpis sagittis. Integer ultricies 
+                sagittis risus eu accumsan. In dapibus augue quis lacinia auctor. Ut quis justo a lacus sagittis vehicula. 
+                Ut et mi non mauris dictum scelerisque. Integer scelerisque sapien urna, id consectetur nulla ultrices at. 
+                Mauris vestibulum, ligula fermentum ornare pharetra, urna diam elementum libero, tincidunt posuere libero 
+                lorem quis nibh. Nam at scelerisque orci.
+                </p>
+                <h3>Lorem Ipsum 4</h3>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dui libero, rhoncus a ultrices sit amet, 
+                porta vel dolor. Mauris luctus lacinia velit, sed pharetra est. Nam convallis ac augue quis mollis. 
+                Vivamus ut interdum libero. Fusce mattis odio vitae urna interdum, a congue turpis sagittis. Integer ultricies 
+                sagittis risus eu accumsan. In dapibus augue quis lacinia auctor. Ut quis justo a lacus sagittis vehicula. 
+                Ut et mi non mauris dictum scelerisque. Integer scelerisque sapien urna, id consectetur nulla ultrices at. 
+                Mauris vestibulum, ligula fermentum ornare pharetra, urna diam elementum libero, tincidunt posuere libero 
+                lorem quis nibh. Nam at scelerisque orci.
+                </p>
+            </div>
+        </div>
+        <div>
+            <h1>Sortable List</h1>
+            <p>The items can be dragged in order.</p>
+            <ul id ="sortable-list" class="list-group">
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+                <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+              </ul>
+        </div>
+    </div>
+
+</body>
+</html>
