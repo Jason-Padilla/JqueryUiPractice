@@ -6,7 +6,7 @@
   * Jquery .draggable()
   * Jquery .resizable()
   * Jquery .droppable()
-  * Jquery .selectable()
+  * Jquery .accordian()
   * Jquery .sortable()
   
 # Screenshots
